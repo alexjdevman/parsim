@@ -1,0 +1,4 @@
+Date Field	String Field	Integer Field	Double Field	Currency Field
+23.12.2016 13:07:24	Transaction_1	100	1000,25	810
+21.12.2016 13:55:00	Transaction_2  	200	2200,15	643
+21.12.2016 10:45:24	Transaction_3  	300	3000,00	978
