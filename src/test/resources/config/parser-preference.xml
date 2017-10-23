@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <!-- Настройки для парсера Excel файлов-->
+    <util:list id="excelParserPreference" list-class="java.util.LinkedList"
+               value-type="org.alexjdev.parsim.preference.ParserPreference">
+        <bean class="org.alexjdev.parsim.preference.ParserPreference">
+            <property name="columnName" value="CorrtermId"/>
+            <property name="propertyName" value="corrTermId"/>
+            <property name="columnType" value="java.lang.String"/>
+        </bean>
+        <bean class="org.alexjdev.parsim.preference.ParserPreference">
+            <property name="columnName" value="Corrmerch"/>
+            <property name="propertyName" value="corrMerch"/>
+            <property name="columnType" value="java.lang.String"/>
+        </bean>
+        <bean class="org.alexjdev.parsim.preference.ParserPreference">
+            <property name="columnName" value="CountOp"/>
+            <property name="propertyName" value="countOp"/>
+            <property name="columnType" value="java.lang.Integer"/>
+        </bean>
+        <bean class="org.alexjdev.parsim.preference.ParserPreference">
+            <property name="columnName" value="SumRur"/>
+            <property name="propertyName" value="sumRur"/>
+            <property name="columnType" value="java.lang.Double"/>
+        </bean>
+        <bean class="org.alexjdev.parsim.preference.ParserPreference">
+            <property name="columnName" value="Percent"/>
+            <property name="propertyName" value="percent"/>
+            <property name="columnType" value="java.lang.Double"/>
+        </bean>
+    </util:list>
+
+    <!-- Парсеры для разбора файлов -->
+    <bean id="excelParser" class="org.alexjdev.parsim.parsers.ExcelFileParser">
+        <property name="workSheetNumber" value="0"/>
+        <property name="fieldInfoRowNumber" value="0"/>
+        <property name="dataRowStartNumber" value="1"/>
+        <property name="filePreferenceList" ref="excelParserPreference"/>
+    </bean>
+
+</beans>
