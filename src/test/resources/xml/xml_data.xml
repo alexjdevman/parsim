@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report_info>
+    <ROW>
+        <create_date>15.02.27</create_date>
+        <comment_text>Case status changed to RELEASED</comment_text>
+        <user_>agafonovda</user_>
+        <create_time>22:55:09</create_time>
+        <case_id>10058682606</case_id>
+        <comment_type>AUTOMATIC</comment_type>
+        <institution>bank</institution>
+    </ROW>
+    <ROW>
+        <create_date>15.02.27</create_date>
+        <comment_text>Case status changed to RELEASED</comment_text>
+        <user_>qwerty</user_>
+        <create_time>22:55:09</create_time>
+        <case_id>10058682624</case_id>
+        <comment_type>AUTOMATIC</comment_type>
+        <institution>VTB24</institution>
+    </ROW>
+    <ROW>
+        <create_date>15.02.27</create_date>
+        <comment_text>Case status changed to RELEASED</comment_text>
+        <user_>aaaaaaaa</user_>
+        <create_time>23:00:23</create_time>
+        <case_id>10058682655</case_id>
+        <comment_type>AUTOMATIC</comment_type>
+        <institution>bank</institution>
+    </ROW>
+</report_info>
